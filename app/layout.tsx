@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Saint Tarila Brisbe",
+  title: "Peter Jonathan-Hart",
   description: "Portfolio Website",
 };
 

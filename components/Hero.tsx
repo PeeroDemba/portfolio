@@ -5,6 +5,9 @@ import {
   RiFacebookCircleLine,
   RiGithubLine,
   RiInstagramLine,
+  RiLinkedinLine,
+  RiMailLine,
+  RiWhatsappLine,
   RiYoutubeLine,
 } from "@remixicon/react";
 import { useMotionValue, useTransform, motion, useSpring } from "framer-motion";
@@ -53,7 +56,7 @@ function Hero() {
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="capitalize flex flex-col gap-y-3  justify-center items-center"
+        className="capitalize flex flex-col gap-y-3  justify-center items-center text-center"
       >
         <motion.div
           style={{
@@ -73,10 +76,10 @@ function Hero() {
         </motion.div>
 
         <h1 className="text-xl sm:text-3xl font-bold tracking-wide text-gray-500 dark:text-white transition-colors">
-          My Name is Peter Hart &
+          I am Peter Jonathan-Hart
         </h1>
         <p className="text-lg text-gray-700 tracking-wide dark:text-gray-200 transition-colors">
-          I like animations 🤗
+          I like building Web and Mobile applications 🤗
         </p>
       </motion.div>
       <motion.div
@@ -86,38 +89,44 @@ function Hero() {
         className="flex gap-6 text-yellow-600 my-4"
       >
         <a
-          href="#"
+          href="https://web.facebook.com/peter.hart.98478"
           className="hover:text-white hover:bg-red-500 transition-colors rounded-md"
         >
           <RiFacebookCircleLine />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/pjonathanhart"
           className="hover:text-white hover:bg-red-500 transition-colors rounded-md"
         >
           <RiInstagramLine />
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/peter-jonathan-hart-944ba21a1/"
           className="hover:text-white hover:bg-red-500 transition-colors rounded-md"
         >
-          <RiDribbbleLine />
+          <RiLinkedinLine />
         </a>
         <a
-          href="#"
+          href="https://wa.me/2348156061460"
           className="hover:text-white hover:bg-red-500 transition-colors rounded-md"
         >
-          <RiYoutubeLine />
+          <RiWhatsappLine />
         </a>
         <a
-          href="#"
+          href="https://www.github.com/peerodemba"
           className="hover:text-white hover:bg-red-500 transition-colors rounded-md"
         >
           <RiGithubLine />
         </a>
+        <a
+          href="mailto:peerodemba@gmail.com"
+          className="hover:text-white hover:bg-red-500 transition-colors rounded-md"
+        >
+          <RiMailLine />
+        </a>
       </motion.div>
       <motion.a
-        href="#"
+        href="https://wa.me/2348156061460"
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.7 }}

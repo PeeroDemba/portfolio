@@ -3,7 +3,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const skills = [{ name: "NextJS", image: "/skills/nextjs.png" }];
+const skills = [
+  { name: "HTML", image: "/skills/html.png" },
+  { name: "CSS", image: "/skills/css.png" },
+  { name: "SASS", image: "/skills/sass.svg" },
+  { name: "TailwindCSS", image: "/skills/tailwind.png" },
+  { name: "JavaScript", image: "/skills/js.png" },
+  { name: "TypeScript", image: "/skills/ts.png" },
+  { name: "ReactJS", image: "/skills/react.png" },
+];
 
 function Skills() {
   const variants = {
@@ -25,7 +33,7 @@ function Skills() {
       id="skills"
       className="min-h-screen flex flex-col items-center justify-center gap-y-20"
     >
-      <h2 className="text-xl dark:text-white transition-colors sm:text-2xl font-bold text-gray-600 mb-14 self-start">
+      <h2 className="text-xl dark:text-white transition-colors sm:text-2xl font-bold text-gray-600 mb-6 self-start">
         Skills
       </h2>
       <div className="w-full flex justify-between flex-wrap gap-x-8 gap-y-10 lg:gap-y-6">

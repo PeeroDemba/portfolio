@@ -23,10 +23,11 @@ const projectButtons = [
   "All",
   "HTML",
   "CSS",
-  "JavaScript",
-  "ReactJS",
+  "SASS",
   "TailwindCSS",
-  "NextJS",
+  "JavaScript",
+  "TypeScript",
+  "ReactJS",
 ];
 
 function Projects() {
@@ -47,7 +48,7 @@ function Projects() {
 
   return (
     <div id="projects" className="min-h-screen py-20">
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-600 dark:text-white transition-colors mb-14 self-start">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-600 dark:text-white transition-colors mb-6 self-start">
         Projects
       </h2>
       <div className="flex flex-wrap items-center justify-between gap-4 py-10">

@@ -1,14 +1,9 @@
 "use client";
 
 import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
-import PricingPlans from "@/components/PricingPlans";
 import Projects from "@/components/Projects";
-import Questions from "@/components/Questions";
-import Reviews from "@/components/Reviews";
 import Skills from "@/components/Skills";
 import Loader from "@/components/ui/Loader";
 import Toggle from "@/components/ui/Toggle";
@@ -30,7 +25,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
 
     if (typeof componentsRef.current?.children !== "undefined") {
@@ -100,13 +95,8 @@ export default function Home() {
         >
           <Hero />
           <About />
-          <Experience />
           <Skills />
-          <Reviews />
           <Projects />
-          <PricingPlans />
-          <Contact />
-          <Questions />
         </div>
       </Toggle>
     </main>

@@ -21,6 +21,7 @@ function Contact() {
             alt="Contact Image"
             width={400}
             height={400}
+            unoptimized
             className="w-[400px] h-auto rounded-md opacity-80"
           />
         </motion.div>
