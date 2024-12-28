@@ -2,10 +2,8 @@
 
 import {
   RiArrowLeftSFill,
-  RiAwardFill,
   RiDownloadLine,
   RiGithubFill,
-  RiGroupLine,
   RiProjector2Line,
 } from "@remixicon/react";
 import { useMotionValue, motion } from "framer-motion";
@@ -96,7 +94,7 @@ function About() {
           <RiGithubFill color="#d1d5db" />
           <div className="flex flex-col gap-y-2">
             <motion.span
-              whileInView={count1(348)}
+              whileInView={count1(50)}
               viewport={{ once: true }}
               className="text-2xl lg:text-xl font-light text-yellow-500"
             >
@@ -111,7 +109,7 @@ function About() {
           <RiProjector2Line color="#d1d5db" />
           <div className="flex flex-col gap-y-2">
             <motion.span
-              whileInView={count2(227)}
+              whileInView={count2(48)}
               viewport={{ once: true }}
               className="text-2xl lg:text-xl font-light text-yellow-500"
             >

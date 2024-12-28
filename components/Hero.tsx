@@ -1,14 +1,12 @@
 "use client";
 
 import {
-  RiDribbbleLine,
   RiFacebookCircleLine,
   RiGithubLine,
   RiInstagramLine,
   RiLinkedinLine,
   RiMailLine,
   RiWhatsappLine,
-  RiYoutubeLine,
 } from "@remixicon/react";
 import { useMotionValue, useTransform, motion, useSpring } from "framer-motion";
 import Image from "next/image";

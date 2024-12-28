@@ -2,11 +2,9 @@
 
 import {
   RiBriefcaseLine,
-  RiContactsBook2Line,
   RiCopyrightLine,
   RiHome5Line,
   RiProjectorLine,
-  RiQuestionAnswerLine,
   RiUserLine,
 } from "@remixicon/react";
 import Link from "next/link";
