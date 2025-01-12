@@ -14,7 +14,7 @@ function Project({
     url: string;
     tech: string[];
     link: string;
-    github: string;
+    github?: string;
   };
   index: number;
 }) {
