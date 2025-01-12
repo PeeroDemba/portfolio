@@ -1,52 +1,10 @@
 "use client";
 
-import {
-  RiArrowLeftSFill,
-  RiDownloadLine,
-  RiGithubFill,
-  RiProjector2Line,
-} from "@remixicon/react";
-import { useMotionValue, motion } from "framer-motion";
+import { RiArrowLeftSFill, RiDownloadLine } from "@remixicon/react";
 import Image from "next/image";
 import React from "react";
 
 function About() {
-  const number1 = useMotionValue(0);
-  const number2 = useMotionValue(0);
-
-  function count1(amount: number) {
-    let i: number = 0;
-    function updateCount1() {
-      let timeout: NodeJS.Timeout | undefined = undefined;
-      if (i <= amount) {
-        number1.set(i++);
-        timeout = setTimeout(updateCount1, 0);
-      } else {
-        if (timeout !== undefined) {
-          clearTimeout(timeout);
-        }
-      }
-    }
-    updateCount1();
-    return ["a"];
-  }
-  function count2(amount: number) {
-    let i: number = 0;
-    function updateCount2() {
-      let timeout: NodeJS.Timeout | undefined = undefined;
-      if (i <= amount) {
-        number2.set(i++);
-        timeout = setTimeout(updateCount2, 0);
-      } else {
-        if (timeout !== undefined) {
-          clearTimeout(timeout);
-        }
-      }
-    }
-    updateCount2();
-    return ["a"];
-  }
-
   return (
     <div
       id="about"
@@ -69,8 +27,8 @@ function About() {
           </span>
           <p className="text-xs dark:text-white leading-8 font-light text-gray-700 first-letter:pl-3 lg:text-[18px] sm:text-[14px]">
             Hi, I&apos;m Peter, a web & mobile developer. I blend the technical
-            skills of web and mobile development. I code in HTML, CSS,
-            JavaScript, TailwindCSS, TypeScript, React and NextJS to build
+            skills of web and mobile development. I write code in HTML, CSS,
+            SASS, TailwindCSS, JavaScript, TypeScript, React and NextJS to build
             functional and responsive websites, while also using React Native
             and Expo to build functional and responsive mobile applications. My
             role allows me to ensure that websites and mobile applications not
@@ -87,38 +45,6 @@ function About() {
               <RiDownloadLine />
             </span>
           </a>
-        </div>
-      </div>
-      <div className="mt-20 w-full flex flex-wrap items-center justify-evenly gap-x-7 gap-y-10">
-        <div className="flex items-end gap-x-3">
-          <RiGithubFill color="#d1d5db" />
-          <div className="flex flex-col gap-y-2">
-            <motion.span
-              whileInView={count1(50)}
-              viewport={{ once: true }}
-              className="text-2xl lg:text-xl font-light text-yellow-500"
-            >
-              {number1}
-            </motion.span>
-            <span className="text-sm tracking-wide text-gray-500 dark:text-white transition-colors">
-              GitHub repo
-            </span>
-          </div>
-        </div>
-        <div className="flex items-end gap-x-3">
-          <RiProjector2Line color="#d1d5db" />
-          <div className="flex flex-col gap-y-2">
-            <motion.span
-              whileInView={count2(48)}
-              viewport={{ once: true }}
-              className="text-2xl lg:text-xl font-light text-yellow-500"
-            >
-              {number2}
-            </motion.span>
-            <span className="text-sm tracking-wide text-gray-500 dark:text-white transition-colors">
-              Successful Projects
-            </span>
-          </div>
         </div>
       </div>
     </div>

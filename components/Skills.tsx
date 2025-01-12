@@ -11,6 +11,8 @@ const skills = [
   { name: "JavaScript", image: "/skills/js.png" },
   { name: "TypeScript", image: "/skills/ts.png" },
   { name: "ReactJS", image: "/skills/react.png" },
+  { name: "NextJS", image: "/skills/nextjs.png" },
+  { name: "Framer Motion", image: "/skills/framer.png" },
 ];
 
 function Skills() {
@@ -36,7 +38,7 @@ function Skills() {
       <h2 className="text-xl dark:text-white transition-colors sm:text-2xl font-bold text-gray-600 mb-6 self-start">
         Skills
       </h2>
-      <div className="w-full flex justify-between flex-wrap gap-x-8 gap-y-10 lg:gap-y-6">
+      <div className="w-full flex flex-wrap gap-x-8 gap-y-10 lg:gap-y-6">
         {skills.map((e, i) => (
           <motion.div
             key={i}

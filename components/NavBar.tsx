@@ -13,7 +13,7 @@ function NavBar({ id }: { id: string }) {
   return (
     <div className="sm:w-[70px] w-[50px] h-screen fixed left-0 top-0 flex flex-col bg-zinc-50 dark:bg-zinc-800 z-30 justify-between border-r border-gray-200 px-2 sm:px-4 py-5">
       <Link href="">
-        <span className="text-3xl font-semibold text-red-400">P</span>.
+        <span className="text-3xl font-semibold text-red-400">P.</span>
         <span className="block w-min rotate-90 dark:text-white transition-colors origin-bottom text-[12px] font-semibold">
           Hart
         </span>

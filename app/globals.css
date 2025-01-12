@@ -21,3 +21,10 @@ body {
     --radius: 0.5rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    color-scheme: dark;
+  }
+}
